@@ -15,4 +15,10 @@ describe('calculateNumber', () => {
     it('Checking division by zero', () => {
         assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error;');
     });
+    it('Checking wrong command 1', () => {
+        assert.equal(calculateNumber(5, 1.4, 4), 'Error');
+    });
+    it('Checking wrong command 2', () => {
+        assert.equal(calculateNumber('wrongCommand', 1.4, 4.5), 'Error');
+    });
 });
