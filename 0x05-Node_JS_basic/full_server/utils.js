@@ -7,8 +7,8 @@ function readDatabase(path) {
         reject(Error(error));
         return;
       }
-      const file_data = data.toString().split('\n');
-      let student = file_data.filter((item) => item);
+      const fileData = data.toString().split('\n');
+      let student = fileData.filter((item) => item);
       student = student.map((item) => item.split(','));
       const fields = {};
 
